@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="GET">
+      <!--
+      - name, email and password required
+      - age, phone, birthdate, gender(M, F), country(Brazil, Canada, Japan, Turkey), picture, Terms and Conditions, Newsletter not required
+      - reset and submit buttons
+      -->
+      <div>
+        <label for="Name">
+          Name:
+          <input type="text" id="nameInput" name="name" required />
+        </label>
+      </div>
+      <div>
+        <label for="Enail">
+          Enail:
+          <input type="email" id="emailInput" name="email" required />
+        </label>
+      </div>
+      <div>
+        <label for="Password">
+          Password:
+          <input
+            type="current-password"
+            id="passwordInput"
+            name="password"
+            required
+          />
+        </label>
+      </div>
+      <div>
+        <label for="Age">
+          Age:
+          <input type="number" id="ageInput" name="age" />
+        </label>
+      </div>
+      <div>
+        <label for="Phone">
+          Phone:
+          <input type="number" id="phoneInput" name="phone" />
+        </label>
+      </div>
+      <div>
+        <label for="Birthday">
+          Birthday:
+          <input type="date" id="birthdayInput" name="birthday" />
+        </label>
+      </div>
+      <div>
+        Gender:
+        <input type="radio" id="gendermaleInput" name="gender" />
+        <label for="gendermaleInput">Man</label>
+
+        <input type="radio" id="genderfemaleInput" name="gender" />
+        <label for="genderfemaleInput">Lady</label>
+
+        <input type="radio" id="genderxInput" name="gender" />
+        <label for="genderxInput">Other</label>
+      </div>
+      <div>
+        Country:
+        <input
+          type="radio"
+          id="countryBrazilInput"
+          name="country"
+          value="Brazil"
+        />
+        <label for="countryBrazilInput">Brazil</label>
+        <input
+          type="radio"
+          id="countryJapanInput"
+          name="country"
+          value="Japan"
+        />
+        <label for="countryJapanInput">Japan</label>
+        <input
+          type="radio"
+          id="countryCanadaInput"
+          name="country"
+          value="Canada"
+        />
+        <label for="countryCanadaInput">Canada</label>
+        <input
+          type="radio"
+          id="countryOtherInput"
+          name="country"
+          value="Other"
+        />
+        <label for="countryOtherInput">Other</label>
+      </div>
+      <div>
+        Pics:
+        <input type="image" id="imageInput" name="pics" />
+      </div>
+      <div>
+        Terms and Conditions:
+        <label for="termsInput">Agree</label>
+        <input type="checkbox" id="termsInput" name="terms" />
+      </div>
+      <div>
+        Newsletter:
+        <label for="letterInput">Need letters</label>
+        <input type="checkbox" id="letterInput" name="letter" />
+      </div>
+
+      <button type="reset">Reset</button>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+    <div id="results">
+      <!--   Name: John -->
+      <!--   All fields added -->
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
